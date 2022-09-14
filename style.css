@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 85vw;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.navbar-logo {
+  width: 5rem;
+}
+
+.navbar-title {
+  /* font-family: "Open Sans", sans-serif; */
+  font-weight: 500;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cart-icon {
+  font-size: 1.8rem;
+}
+.cart-badge {
+  background-color: #cf082c;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 1.2rem;
+  bottom: 1.2rem;
+  color: white;
+  font-size: 0.9rem;
+}
