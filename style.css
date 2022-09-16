@@ -26,8 +26,8 @@ body {
 }
 
 .navbar-title {
-  /* font-family: "Open Sans", sans-serif; */
   font-weight: 500;
+  font-size: 2rem;
 }
 
 .cart {
@@ -40,6 +40,7 @@ body {
 .cart-icon {
   font-size: 1.8rem;
 }
+
 .cart-badge {
   background-color: #cf082c;
   width: 1.5rem;
@@ -53,4 +54,21 @@ body {
   bottom: 1.2rem;
   color: white;
   font-size: 0.9rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rem;
+}
+.header-txt {
+  max-width: 2rem;
+  font-size: 5rem;
+  font-weight: 900;
+}
+.header-img {
+  height: 40rem;
+  width: 40rem;
+  border-radius: 1rem;
 }
