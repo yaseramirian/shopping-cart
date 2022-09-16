@@ -79,13 +79,13 @@ body {
   margin-top: 12rem;
 }
 
-.products-main__wrapper {
+.products-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.products-main__wrapper:not(:nth-child(1)) {
+.products-wrapper:not(:nth-child(1)) {
   margin-top: 3rem;
 }
 
@@ -121,4 +121,28 @@ body {
   margin-top: 0.3rem;
   margin-left: 0.2rem;
   color: #696969;
+}
+
+.collection-xc72 {
+  margin-top: 15rem;
+}
+.collection-xc72__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collection-xc72__header-poster {
+  width: 36rem;
+  height: 36rem;
+  background-image: url(./assets/banners/banner-xc72.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+}
+
+.collection-xc72__header-gif {
+  width: 36rem;
+  height: 36rem;
+  border-radius: 1rem;
 }
