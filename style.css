@@ -62,13 +62,63 @@ body {
   align-items: center;
   margin-top: 10rem;
 }
+
 .header-txt {
   max-width: 2rem;
   font-size: 5rem;
   font-weight: 900;
 }
+
 .header-img {
   height: 40rem;
   width: 40rem;
   border-radius: 1rem;
+}
+
+.products-main {
+  margin-top: 12rem;
+}
+
+.products-main__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products-main__wrapper:not(:nth-child(1)) {
+  margin-top: 3rem;
+}
+
+.product-img__wrapper {
+  position: relative;
+}
+
+.product-img {
+  height: 22rem;
+  width: 22rem;
+  border-radius: 1rem;
+}
+
+.add-btn {
+  font-size: 3rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  visibility: hidden;
+}
+
+.product-img:hover ~ .add-btn {
+  visibility: visible;
+}
+
+.product-model {
+  margin-top: 0.8rem;
+  margin-left: 0.2rem;
+  font-weight: 600;
+}
+
+.product-fee {
+  margin-top: 0.3rem;
+  margin-left: 0.2rem;
+  color: #696969;
 }
