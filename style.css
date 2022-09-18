@@ -161,3 +161,28 @@ body {
   margin-bottom: 5rem;
 }
 
+.collection-5740 {
+  margin-top: 15rem;
+}
+
+.collection-5740__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.collection-5740__header-poster {
+  width: 36rem;
+  height: 36rem;
+  background-image: url(./assets/banners/banner-5740.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+}
+
+.collection-5740__header-gif {
+  width: 36rem;
+  height: 36rem;
+  border-radius: 1rem;
+}
