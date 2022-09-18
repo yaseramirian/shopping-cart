@@ -46,7 +46,6 @@ body {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 100%;
-  display: none;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -54,6 +53,7 @@ body {
   bottom: 1.2rem;
   color: white;
   font-size: 0.9rem;
+  visibility: hidden;
 }
 
 .header {
@@ -126,10 +126,12 @@ body {
 .collection-xc72 {
   margin-top: 15rem;
 }
+
 .collection-xc72__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 .collection-xc72__header-poster {
@@ -146,3 +148,16 @@ body {
   height: 36rem;
   border-radius: 1rem;
 }
+
+.collection-237 {
+  margin-top: 15rem;
+}
+
+.collection-237__poster {
+  height: 40rem;
+  background-image: url(./assets/banners/banner-237.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 5rem;
+}
+
