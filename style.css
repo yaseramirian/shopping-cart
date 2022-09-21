@@ -186,3 +186,37 @@ body {
   height: 36rem;
   border-radius: 1rem;
 }
+
+.footer-top__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer-top {
+  margin-top: 15rem;
+  background-color: #29242b;
+}
+.footer-top__img {
+  height: 50rem;
+}
+.footer-top__txt {
+  color: #efc451;
+}
+
+.footer-top__txt h4 {
+  font-size: 7rem;
+  max-width: 13rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-shadow: 0px 5px #af4244;
+}
+
+.footer-top__txt a {
+  text-decoration: none;
+  color: #efc451;
+  font-size: 1.5rem;
+}
+
+.fa-angle-right {
+  font-size: 1.2rem;
+}
