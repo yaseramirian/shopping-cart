@@ -220,3 +220,32 @@ body {
 .fa-angle-right {
   font-size: 1.2rem;
 }
+
+.footer-bottom {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-bottom__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-bottom__copyright img {
+  margin-bottom: 1.5rem;
+}
+.footer-bottom__info {
+  max-width: 25rem;
+  margin-left: 5rem;
+}
+
+.footer-bottom__info p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.footer-bottom__links {
+  font-size: 2rem;
+}
