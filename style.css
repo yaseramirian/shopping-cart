@@ -228,6 +228,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .footer-bottom__copyright {
   display: flex;
   flex-direction: column;
@@ -249,6 +250,10 @@ body {
 
 .footer-bottom__links {
   font-size: 2rem;
+}
+
+.footer-bottom__links a {
+  color: #000;
 }
 
 .footer-bottom__links i {
