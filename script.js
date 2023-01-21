@@ -1,7 +1,8 @@
 // Variables
 const addBtn = document.querySelectorAll(".add-btn");
+const clearBtn = document.querySelector(".clear-btn");
 const cardContent = document.querySelector(".cart");
-// const removeBtn = document.querySelectorAll(".cart-proudct-remove");
+const cart = document.querySelector(".cart-icon");
 
 // Event Listeners
 eventListeners();
@@ -11,6 +12,7 @@ function eventListeners() {
   }
 
   cardContent.addEventListener("click", removeProduct);
+  clearBtn.addEventListener("click", clear);
 }
 
 // Functions
@@ -55,3 +57,8 @@ function removeProduct(e) {
     e.target.parentElement.parentElement.remove();
   }
 }
+
+function clear() {
+  cardContent.remove();
+}
+
