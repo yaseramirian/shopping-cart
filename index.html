@@ -20,7 +20,6 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <script src="./script.js"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -28,11 +27,21 @@
       <nav class="navbar">
         <img src="./assets/logos/nav-logo.svg" alt="logo" class="navbar-logo" />
         <h2 class="navbar-title">SNEAKERS</h2>
-        <div class="cart">
-          <i class="cart-icon fa-solid fa-cart-shopping"></i>
+        <div class="cart-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
           <span class="cart-badge"></span>
         </div>
       </nav>
+
+      <section class="cart">
+        <div class="cart-info">
+          <p>Total Price:&nbsp; <span>500$</span></p>
+          <div class="cart-info-btn">
+            <button>Clear</button>
+            <button>Buy</button>
+          </div>
+        </div>
+      </section>
     </div>
     <!-- Header -->
     <div class="container">
@@ -55,7 +64,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">The 327</h3>
-            <p class="product-fee">$70</p>
+            <p class="product-price">$70</p>
           </div>
           <div class="product">
             <div class="product-img__wrapper">
@@ -67,7 +76,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">300 Court</h3>
-            <p class="product-fee">$80</p>
+            <p class="product-price">$80</p>
           </div>
           <div class="product">
             <div class="product-img__wrapper">
@@ -79,7 +88,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">NB Numeric Tiago Lemos 1010</h3>
-            <p class="product-fee">$110</p>
+            <p class="product-price">$110</p>
           </div>
         </div>
         <div class="products-wrapper">
@@ -93,7 +102,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">NB Numeric Tiago Lemos 808</h3>
-            <p class="product-fee">$90</p>
+            <p class="product-price">$90</p>
           </div>
           <div class="product">
             <div class="product-img__wrapper">
@@ -105,7 +114,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">NB Numeric 272</h3>
-            <p class="product-fee">$75</p>
+            <p class="product-price">$75</p>
           </div>
           <div class="product">
             <div class="product-img__wrapper">
@@ -117,7 +126,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">RC30</h3>
-            <p class="product-fee">$100</p>
+            <p class="product-price">$100</p>
           </div>
         </div>
         <div class="products-wrapper">
@@ -131,7 +140,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">Made in USA 990v3</h3>
-            <p class="product-fee">$200</p>
+            <p class="product-price">$200</p>
           </div>
           <div class="product">
             <div class="product-img__wrapper">
@@ -143,7 +152,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">NB Numeric 272</h3>
-            <p class="product-fee">$85</p>
+            <p class="product-price">$85</p>
           </div>
           <div class="product">
             <div class="product-img__wrapper">
@@ -155,7 +164,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">CT302</h3>
-            <p class="product-fee">$90</p>
+            <p class="product-price">$90</p>
           </div>
         </div>
       </section>
@@ -182,7 +191,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">XC-72</h3>
-            <p class="product-fee">$110</p>
+            <p class="product-price">$110</p>
           </div>
           <div class="product">
             <div class="product-img__wrapper">
@@ -194,7 +203,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">STAUD XC-72</h3>
-            <p class="product-fee">$150</p>
+            <p class="product-price">$150</p>
           </div>
           <div class="product">
             <div class="product-img__wrapper">
@@ -206,7 +215,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">XC-72sa</h3>
-            <p class="product-fee">$95</p>
+            <p class="product-price">$95</p>
           </div>
         </div>
       </section>
@@ -226,7 +235,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">The 237</h3>
-            <p class="product-fee">$65</p>
+            <p class="product-price">$65</p>
           </div>
           <div class="product">
             <div class="product-img__wrapper">
@@ -238,7 +247,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">237ef</h3>
-            <p class="product-fee">$80</p>
+            <p class="product-price">$80</p>
           </div>
           <div class="product">
             <div class="product-img__wrapper">
@@ -250,7 +259,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">237v1</h3>
-            <p class="product-fee">$70</p>
+            <p class="product-price">$70</p>
           </div>
         </div>
       </div>
@@ -277,7 +286,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">57/40cba</h3>
-            <p class="product-fee">$85</p>
+            <p class="product-price">$85</p>
           </div>
           <div class="product">
             <div class="product-img__wrapper">
@@ -289,7 +298,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">57/40cbd</h3>
-            <p class="product-fee">$90</p>
+            <p class="product-price">$90</p>
           </div>
           <div class="product">
             <div class="product-img__wrapper">
@@ -301,7 +310,7 @@
               <i class="add-btn fa-solid fa-cart-plus"></i>
             </div>
             <h3 class="product-model">57/40</h3>
-            <p class="product-fee">$100</p>
+            <p class="product-price">$100</p>
           </div>
         </div>
       </section>
@@ -358,5 +367,6 @@
         </div>
       </section>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

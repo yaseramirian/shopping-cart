@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+button {
   font-family: "Poppins", sans-serif;
 }
 
@@ -30,15 +31,13 @@ body {
   font-size: 2rem;
 }
 
-.cart {
+.cart-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-.cart-icon {
-  font-size: 1.8rem;
+  cursor: pointer;
+  font-size: 2.5rem;
 }
 
 .cart-badge {
@@ -54,6 +53,94 @@ body {
   color: white;
   font-size: 0.9rem;
   visibility: hidden;
+}
+
+.cart {
+  width: 55%;
+  position: absolute;
+  right: 6rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  border-radius: 1rem;
+  color: white;
+  /* display: none; */
+}
+
+.cart-proudct {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.cart-proudct-img {
+  height: 10rem;
+  border-radius: 1rem;
+  margin-right: 2rem;
+}
+
+.cart-proudct-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-proudct-info p {
+  font-size: 2rem;
+}
+
+.cart-proudct-price {
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+
+.cart-proudct-price span {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.cart-proudct button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  width: 5rem;
+  cursor: pointer;
+}
+
+.cart-info {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.cart-info span {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.cart-info-btn {
+  display: flex;
+  align-items: center;
+}
+
+.cart-info button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  width: 8rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.cart-info-btn button:nth-child(2) {
+  background-color: white;
+  color: black;
 }
 
 .header {
@@ -105,6 +192,11 @@ body {
   right: 1.5rem;
   top: 1.5rem;
   visibility: hidden;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  visibility: visible;
 }
 
 .product-img:hover ~ .add-btn {
@@ -117,7 +209,7 @@ body {
   font-weight: 600;
 }
 
-.product-fee {
+.product-price {
   margin-top: 0.3rem;
   margin-left: 0.2rem;
   color: #696969;
@@ -285,7 +377,7 @@ body {
     font-size: 1rem;
   }
 
-  .product-fee {
+  .product-price {
     font-size: 0.9rem;
   }
 
@@ -329,7 +421,7 @@ body {
     font-size: 0.7rem;
   }
 
-  .product-fee {
+  .product-price {
     font-size: 0.6rem;
   }
 
@@ -417,7 +509,7 @@ body {
     max-width: 7rem;
   }
 
-  .product-fee {
+  .product-price {
     font-size: 0.6rem;
   }
 
@@ -436,8 +528,8 @@ body {
 
   .collection-xc72__header-poster,
   .collection-5740__header-poster {
-    width: 11rem;
-    height: 11rem;
+    width: 10rem;
+    height: 10rem;
   }
 
   .collection-237__poster {
@@ -446,8 +538,8 @@ body {
 
   .collection-xc72__header-gif,
   .collection-5740__header-gif {
-    width: 11rem;
-    height: 11rem;
+    width: 10rem;
+    height: 10rem;
   }
 
   .footer-top__img {
@@ -480,6 +572,17 @@ body {
 
   .footer-bottom__info p {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .product-img {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .product-model {
+    max-width: 6rem;
   }
 }
 
@@ -558,7 +661,7 @@ body {
     font-size: 0.5rem;
   }
 
-  .product-fee {
+  .product-price {
     font-size: 0.4rem;
   }
 
