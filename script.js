@@ -1,7 +1,7 @@
 // Variables
 const addBtn = document.querySelectorAll(".add-btn");
 const clearBtn = document.querySelector(".clear-btn");
-const cardContent = document.querySelector(".cart");
+const cartContent = document.querySelector(".cart-list");
 const cart = document.querySelector(".cart-icon");
 
 // Event Listeners
@@ -11,7 +11,7 @@ function eventListeners() {
     addBtn[i].addEventListener("click", addProduct);
   }
 
-  cardContent.addEventListener("click", removeProduct);
+  cartContent.addEventListener("click", removeProduct);
   clearBtn.addEventListener("click", clear);
 }
 
@@ -32,10 +32,10 @@ function getProductInfo(product) {
 }
 
 function addToCart(productInfo) {
-  let cardProduct = document.createElement("div");
-  cardProduct.classList.add("cart-proudct");
+  let cartProduct = document.createElement("div");
+  cartProduct.classList.add("cart-proudct");
 
-  cardProduct.innerHTML = `
+  cartProduct.innerHTML = `
 
    <img class="cart-proudct-img"
    src="${productInfo.image}"
@@ -49,7 +49,7 @@ function addToCart(productInfo) {
   
   
   `;
-  cardContent.appendChild(cardProduct);
+  cartContent.appendChild(cartProduct);
 }
 
 function removeProduct(e) {
@@ -59,6 +59,5 @@ function removeProduct(e) {
 }
 
 function clear() {
-  cardContent.remove();
+  cartContent.remove();
 }
-

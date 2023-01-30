@@ -64,7 +64,13 @@ button {
   backdrop-filter: blur(20px);
   border-radius: 1rem;
   color: white;
-  /* display: none; */
+  appearance: none;
+  z-index: 1;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .cart-proudct {
